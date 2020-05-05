@@ -7,6 +7,18 @@ import (
 	"time"
 )
 
+type SortFunc func([]int)
+
+var algos = map[string]SortFunc {
+	"Bubble sort": BubbleSort,
+	"Comb sort": CombSort,
+	"Cocktail sort": CocktailSort,
+	"Gnome sort": GnomeSort,
+	"Insertion sort": InsertionSort,
+	"Merge sort": MergeSort,
+	"Selection sort": SelectionSort,
+}
+
 func randomRange(size int) []int {
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 	return r.Perm(size)
@@ -20,17 +32,6 @@ func randomArray(size, max int) []int {
 		a[i] = r.Intn(max)
 	}
 	return a
-}
-
-type SortFunc func([]int)
-
-var algos = map[string]SortFunc {
-	"Bubble sort": BubbleSort,
-	"Comb sort": CombSort,
-	"Cocktail sort": CocktailSort,
-	"Gnome sort": GnomeSort,
-	"Merge sort": MergeSort,
-	"Selection sort": SelectionSort,
 }
 
 func runTest(t *testing.T, name string, fn SortFunc, a []int) {
