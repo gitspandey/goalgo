@@ -16,6 +16,7 @@ var algos = map[string]SortFunc {
 	"Gnome sort": GnomeSort,
 	"Insertion sort": InsertionSort,
 	"Merge sort": MergeSort,
+	"Quicksort": QuickSort,
 	"Selection sort": SelectionSort,
 }
 
