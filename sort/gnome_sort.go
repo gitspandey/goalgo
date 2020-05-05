@@ -7,7 +7,7 @@ func GnomeSort (a []int) {
 		if i == 0 || a[i] >= a[i-1] {
 			i++
 		} else {
-			a[i-i], a[i] = a[i], a[i-1]
+			a[i-1], a[i] = a[i], a[i-1]
 			i--
 		}
 	}
