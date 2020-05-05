@@ -16,7 +16,9 @@ type SortFunc func([]int)
 
 var algos = map[string]SortFunc {
 	"Bubble sort": BubbleSort,
+	"Comb sort": CombSort,
 	"Cocktail sort": CocktailSort,
+	"Gnome sort": GnomeSort,
 	"Selection sort": SelectionSort,
 }
 
