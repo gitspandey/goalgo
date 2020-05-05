@@ -2,7 +2,7 @@ package sort
 
 // Reference: https://en.wikipedia.org/wiki/Bubble_sort
 
-func BubbleSort (a []int) {
+func BubbleSort(a []int) {
 	swapped := true
 	for end := len(a); end > 0 && swapped; end-- {
 		swapped = false

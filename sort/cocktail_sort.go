@@ -2,7 +2,7 @@ package sort
 
 // Reference: https://en.wikipedia.org/wiki/Cocktail_shaker_sort
 
-func CocktailSort (a []int) {
+func CocktailSort(a []int) {
 	swapped := true
 	for start := 0; start < len(a) && swapped; start++ {
 		swapped = false

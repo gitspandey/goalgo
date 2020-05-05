@@ -29,6 +29,7 @@ var algos = map[string]SortFunc {
 	"Comb sort": CombSort,
 	"Cocktail sort": CocktailSort,
 	"Gnome sort": GnomeSort,
+	"Merge sort": MergeSort,
 	"Selection sort": SelectionSort,
 }
 

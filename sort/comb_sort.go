@@ -4,7 +4,7 @@ import "math"
 
 // Reference: https://en.wikipedia.org/wiki/Comb_sort
 
-func CombSort (a []int) {
+func CombSort(a []int) {
 	gap := len(a)
 	shrink := 1.3
 	sorted := false
