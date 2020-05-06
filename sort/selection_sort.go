@@ -14,7 +14,7 @@ func minimum(a []int, start int) int {
 }
 
 func SelectionSort(a []int) {
-	for i := 0; i < len(a) - 1; i++ {
+	for i := 0; i < len(a)-1; i++ {
 		if j := minimum(a, i); j != i {
 			a[i], a[j] = a[j], a[i]
 		}

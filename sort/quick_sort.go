@@ -13,12 +13,12 @@ func QuickSort(a []int) {
 }
 
 func partition(a []int) int {
-	pivot := a[(len(a) - 1) / 2]
+	pivot := a[(len(a)-1)/2]
 	i, j := -1, len(a)
 	for {
-		for i++; a[i] < pivot; i++{
+		for i++; a[i] < pivot; i++ {
 		}
-		for j--; a[j] > pivot; j--{
+		for j--; a[j] > pivot; j-- {
 		}
 
 		if i >= j {

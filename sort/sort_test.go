@@ -9,14 +9,14 @@ import (
 
 type SortFunc func([]int)
 
-var algos = map[string]SortFunc {
-	"Bubble sort": BubbleSort,
-	"Comb sort": CombSort,
-	"Cocktail sort": CocktailSort,
-	"Gnome sort": GnomeSort,
+var algos = map[string]SortFunc{
+	"Bubble sort":    BubbleSort,
+	"Comb sort":      CombSort,
+	"Cocktail sort":  CocktailSort,
+	"Gnome sort":     GnomeSort,
 	"Insertion sort": InsertionSort,
-	"Merge sort": MergeSort,
-	"Quicksort": QuickSort,
+	"Merge sort":     MergeSort,
+	"Quicksort":      QuickSort,
 	"Selection sort": SelectionSort,
 }
 
@@ -29,7 +29,7 @@ func randomArray(size, max int) []int {
 	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 
 	a := make([]int, size)
-	for i := range(a) {
+	for i := range a {
 		a[i] = r.Intn(max)
 	}
 	return a
@@ -59,7 +59,7 @@ func TestSortRandomDistinct(t *testing.T) {
 func TestSortAllDuplicates(t *testing.T) {
 	for name, fn := range algos {
 		a := make([]int, 100)
-		for i := range(a) {
+		for i := range a {
 			a[i] = 42
 		}
 		runTest(t, name, fn, a)
@@ -69,7 +69,7 @@ func TestSortAllDuplicates(t *testing.T) {
 func TestSortAlreadySorted(t *testing.T) {
 	for name, fn := range algos {
 		a := make([]int, 100)
-		for i := range(a) {
+		for i := range a {
 			a[i] = i
 		}
 		runTest(t, name, fn, a)
@@ -79,7 +79,7 @@ func TestSortAlreadySorted(t *testing.T) {
 func TestSortAlreadySortedDescending(t *testing.T) {
 	for name, fn := range algos {
 		a := make([]int, 100)
-		for i := range(a) {
+		for i := range a {
 			a[i] = 99 - i
 		}
 		runTest(t, name, fn, a)

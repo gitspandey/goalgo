@@ -16,7 +16,7 @@ func CombSort(a []int) {
 			sorted = true
 		}
 
-		for i := 0; i < len(a) - gap; i++ {
+		for i := 0; i < len(a)-gap; i++ {
 			if a[i] > a[i+gap] {
 				a[i], a[i+gap] = a[i+gap], a[i]
 				sorted = false
