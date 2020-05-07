@@ -1,5 +1,5 @@
 # Algorithms in Go
-![Go](https://github.com/gsbp/goalgo/workflows/Go/badge.svg)
+![Go](https://github.com/gitspandey/goalgo/workflows/Go/badge.svg)
 
 ## Array
 * [Binary search](array/binary_search.go)
